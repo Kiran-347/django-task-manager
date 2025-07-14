@@ -1,0 +1,15 @@
+{% extends 'todo/base.html' %}
+{% block title %}Welcome{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-md-8">
+    <div class="text-center mt-5">
+      <h2 class="mb-4">📝 Welcome to the Task Manager</h2>
+      <p class="lead">Keep track of your tasks efficiently and securely.</p>
+      <a href="{% url 'login' %}" class="btn btn-primary me-2">Login</a>
+      <a href="{% url 'signup' %}" class="btn btn-outline-success">Signup</a>
+    </div>
+  </div>
+</div>
+{% endblock %}
